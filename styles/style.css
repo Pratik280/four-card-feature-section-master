@@ -1,51 +1,12 @@
-/*
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Red: hsl(0, 78%, 62%)
-- Cyan: hsl(180, 62%, 55%)
-- Orange: hsl(34, 97%, 64%)
-- Blue: hsl(212, 86%, 64%)
-
-### Neutral
-
-- Very Dark Blue: hsl(234, 12%, 34%)
-- Grayish Blue: hsl(229, 6%, 66%)
-- Very Light Gray: hsl(0, 0%, 98%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 15px
-
-### Fonts
-Extra-light 200
-Regular 400
-Semi-bold 600
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 200, 400, 600
-*/
-
 @import "default.css";
 
 header,
 .cards-wrapper {
   margin: 7.5rem 0;
-  @media (min-width: 40em) {
+  @media (min-width: 60em) {
     header,
     .cards-wrapper {
-      margin: 17.5rem 0;
+      margin: 10rem 0;
     }
   }
 }
@@ -58,19 +19,57 @@ header{
 
 header h2{
   margin: 1.5rem 0;
-  @media (min-width: 40em) {
+  @media (min-width: 60em) {
     margin: 4rem 0;
+  }
+}
+
+/* ==== CARD LAYOUT ==== */
+
+/* mobile and tablet */
+.cards-wrapper{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+
+/* desktop */
+@media (min-width: 60em){
+  .cards-wrapper{
+    grid-template-rows: repeat(4, 10rem);
+    grid-template-areas:
+      '........ team-builder ..........'
+      'superior team-builder calculator'
+      'superior karma calculator'
+      '........ karma ........';
+  }
+
+  .card-superior{
+    grid-area: superior;
+  }
+
+  .card-team-builder{
+    grid-area: team-builder;
+  }
+
+  .card-karma{
+    grid-area: karma;
+  }
+
+  .card-calculator{
+    grid-area: calculator;
   }
 }
 
 /* ==== CARD STYLING ==== */
 
 .card{
-  min-height: 100%;
-  margin: 2rem 0rem;
   padding: 1.75rem 2.5rem;
   background: hsl(0, 0%, 100%);
   border-radius: 0.75rem;
+  box-shadow: 0 10px 20px 0 var(--clr-cyan);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1),
+              0 3px 6px 0 rgba(69, 211, 211, 0.15);
 }
 
 .card p{
@@ -99,6 +98,18 @@ figure{
 }
 
 /* ==== FOOTER STYLING ==== */
+
+/* @media (min-width: 60em){ */
+/*   body{ */
+/*     height: 100vh; */
+/*   } */
+/*   main{ */
+/*     max-height: 95vh; */
+/*   } */
+/*   footer{ */
+/*     max-height: 5vh; */
+/*   } */
+/* } */
 
 footer{
   text-align: center;
