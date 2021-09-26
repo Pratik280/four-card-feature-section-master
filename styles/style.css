@@ -39,3 +39,67 @@ Semi-bold 600
 
 @import "default.css";
 
+header,
+.cards-wrapper {
+  margin: 7.5rem 0;
+  @media (min-width: 40em) {
+    header,
+    .cards-wrapper {
+      margin: 17.5rem 0;
+    }
+  }
+}
+
+/* ==== HEADER STYLING ==== */
+
+header{
+  text-align: center;
+}
+
+header h2{
+  margin: 1.5rem 0;
+  @media (min-width: 40em) {
+    margin: 4rem 0;
+  }
+}
+
+/* ==== CARD STYLING ==== */
+
+.card{
+  min-height: 100%;
+  margin: 2rem 0rem;
+  padding: 1.75rem 2.5rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 0.75rem;
+}
+
+.card p{
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.border-top-red{
+  border-top: 0.5rem solid var(--clr-red);
+}
+
+.border-top-cyan{
+  border-top: 0.5rem solid var(--clr-cyan);
+}
+
+.border-top-orange{
+  border-top: 0.5rem solid var(--clr-orange);
+}
+
+.border-top-blue{
+  border-top: 0.5rem solid var(--clr-blue);
+}
+
+figure{
+  text-align: end;
+}
+
+/* ==== FOOTER STYLING ==== */
+
+footer{
+  text-align: center;
+}
