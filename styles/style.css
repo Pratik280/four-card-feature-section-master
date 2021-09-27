@@ -2,26 +2,47 @@
 
 header,
 .cards-wrapper {
-  margin: 7.5rem 0;
+  padding: 2.5rem 0;
   @media (min-width: 60em) {
     header,
     .cards-wrapper {
-      margin: 10rem 0;
+      padding: 100rem 0;
     }
   }
 }
 
-/* ==== HEADER STYLING ==== */
+/* ==== LAYOUT STYLING ==== */
+
+@media (min-width: 60em){
+  body{
+    height: 100vh;
+  }
+  header{
+    min-height: 30vh;
+    margin-top: auto;
+  }
+  header h1{
+    padding-top: 5rem;
+  }
+  .cards-wrapper{
+    min-height: 67vh;
+  }
+  footer{
+    min-height: 3vh;
+  }
+}
 
 header{
   text-align: center;
 }
 
 header h2{
-  margin: 1.5rem 0;
-  @media (min-width: 60em) {
-    margin: 4rem 0;
-  }
+  padding: 1.5rem 0;
+}
+
+header p{
+  display: inline-block;
+  max-width: 55ch;
 }
 
 /* ==== CARD LAYOUT ==== */
@@ -67,9 +88,8 @@ header h2{
   padding: 1.75rem 2.5rem;
   background: hsl(0, 0%, 100%);
   border-radius: 0.75rem;
-  box-shadow: 0 10px 20px 0 var(--clr-cyan);
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1),
-              0 3px 6px 0 rgba(69, 211, 211, 0.15);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1),
+              0 3px 6px 0 rgba(69, 211, 211, 0.05);
 }
 
 .card p{
@@ -99,17 +119,6 @@ figure{
 
 /* ==== FOOTER STYLING ==== */
 
-/* @media (min-width: 60em){ */
-/*   body{ */
-/*     height: 100vh; */
-/*   } */
-/*   main{ */
-/*     max-height: 95vh; */
-/*   } */
-/*   footer{ */
-/*     max-height: 5vh; */
-/*   } */
-/* } */
 
 footer{
   text-align: center;
