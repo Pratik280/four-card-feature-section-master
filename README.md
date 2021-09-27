@@ -22,13 +22,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/ss1.png)
+![](images/ss2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Source Code: [Github](https://github.com/Pratik280/four-card-feature-section-master)
+- Live Site : [https://pratik280.github.io/four-card-feature-section-master/](https://pratik280.github.io/four-card-feature-section-master/)
+- 
 ## My process
 
 ### Built with
@@ -40,6 +41,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Pratik280](https://www.frontendmentor.io/profile/Pratik280)
